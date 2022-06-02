@@ -1,0 +1,69 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?514cb281e22ec0dc29ed0cfe57bae0c5") format("truetype"),
+url("./flaticon.woff?514cb281e22ec0dc29ed0cfe57bae0c5") format("woff"),
+url("./flaticon.woff2?514cb281e22ec0dc29ed0cfe57bae0c5") format("woff2"),
+url("./flaticon.eot?514cb281e22ec0dc29ed0cfe57bae0c5#iefix") format("embedded-opentype"),
+url("./flaticon.svg?514cb281e22ec0dc29ed0cfe57bae0c5#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "pawprint": "\f101",
+    "blind": "\f102",
+    "pet-house": "\f103",
+    "pawprint-1": "\f104",
+    "dog-eating": "\f105",
+    "grooming": "\f106",
+    "stethoscope": "\f107",
+    "customer-service": "\f108",
+    "emergency-call": "\f109",
+    "veterinarian": "\f10a",
+    "consulting": "\f10b",
+);
+
+.flaticon-pawprint:before {
+    content: map-get($flaticon-map, "pawprint");
+}
+.flaticon-blind:before {
+    content: map-get($flaticon-map, "blind");
+}
+.flaticon-pet-house:before {
+    content: map-get($flaticon-map, "pet-house");
+}
+.flaticon-pawprint-1:before {
+    content: map-get($flaticon-map, "pawprint-1");
+}
+.flaticon-dog-eating:before {
+    content: map-get($flaticon-map, "dog-eating");
+}
+.flaticon-grooming:before {
+    content: map-get($flaticon-map, "grooming");
+}
+.flaticon-stethoscope:before {
+    content: map-get($flaticon-map, "stethoscope");
+}
+.flaticon-customer-service:before {
+    content: map-get($flaticon-map, "customer-service");
+}
+.flaticon-emergency-call:before {
+    content: map-get($flaticon-map, "emergency-call");
+}
+.flaticon-veterinarian:before {
+    content: map-get($flaticon-map, "veterinarian");
+}
+.flaticon-consulting:before {
+    content: map-get($flaticon-map, "consulting");
+}
